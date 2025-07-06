@@ -45,3 +45,22 @@ next-env.d.ts
 *.webm
 *.avi
 *.mov
+
+# Large image files
+*.jpg
+*.jpeg
+*.png
+*.webp
+*.svg
+
+# Node modules
+node_modules/
+
+# Next.js build files
+.next/
+
+# Large files
+*.mp4
+*.webm
+*.avi
+*.mov
