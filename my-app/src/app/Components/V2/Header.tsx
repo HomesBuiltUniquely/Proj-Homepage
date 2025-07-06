@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { NavBar } from "./Navbar";
+import Image from "next/image";
 
 export default function Header() {
   const images = ["1.svg", "2.png", "3.svg", "4.jpg"];
@@ -43,12 +44,12 @@ export default function Header() {
     }
   }, [isTransitioning]);
 
-  const handleTouchStart = (e: any) => {
+  const handleTouchStart = (e: React.TouchEvent) => {
     if (!isTransitioning) return;
     touchStartXRef.current = e.touches[0].clientX;
   };
 
-  const handleTouchEnd = (e : any) => {
+  const handleTouchEnd = (e : React.TouchEvent) => {
     if (!isTransitioning) return;
     touchEndXRef.current = e.changedTouches[0].clientX;
     const distance = touchStartXRef.current - touchEndXRef.current;
@@ -110,7 +111,7 @@ export default function Header() {
           onTransitionEnd={handleTransitionEnd}
         >
           {extendedImages.map((src, idx) => (
-            <img
+            <Image
               key={idx}
               src={src}
               alt={`Slide ${idx}`}

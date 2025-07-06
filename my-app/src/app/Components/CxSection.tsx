@@ -1,6 +1,8 @@
 'use client';
 import { useState, useEffect, useRef } from 'react';
 
+const videoRefs = useRef<(HTMLVideoElement | null)[]>([]);
+
 export function CxSection() {
   const videos = [
     { src: '/execution.mp4', title: 'Testimonial 1' },
@@ -81,11 +83,13 @@ export function CxSection() {
             onClick={() => handleVideoClick(index)}
           >
             <video
-              ref={(el: any) => (videoRefs.current[index] = el)}
+              ref={(el: HTMLVideoElement | null) => {
+                videoRefs.current[index] = el;
+              }}
               src={video.src}
               className="w-full h-full object-cover cursor-pointer"
-              autoPlay={false} // Start paused
-              muted={index !== 1} // Only center video can be unmuted
+              autoPlay={false}
+              muted={index !== 1}
               loop
               playsInline
             />

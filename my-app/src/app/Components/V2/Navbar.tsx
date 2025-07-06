@@ -1,6 +1,7 @@
 'use client';
 import { useEffect, useState } from "react";
 import Link from 'next/link';
+import Image from "next/image";
 
 export function NavBar() {
   const [scrolled, setScrolled] = useState(false);
@@ -25,7 +26,7 @@ export function NavBar() {
         >
 
           <Link href="/">
-            <img
+            <Image
               src="/hub.png"
               alt="Logo"
               className={`cursor-pointer transition-all duration-300 ${
