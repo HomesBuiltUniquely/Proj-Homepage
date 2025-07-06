@@ -111,15 +111,16 @@ export default function Header() {
           onTransitionEnd={handleTransitionEnd}
         >
           {extendedImages.map((src, idx) => (
-            <Image
-              key={idx}
-              src={src}
-              alt={`Slide ${idx}`}
-              className="w-full h-full object-cover flex-shrink-0"
-              draggable={false}
-              style={{ minWidth: "100%", minHeight: "100%" }}
-            />
-          ))}
+              <div key={idx} className="relative w-full h-full flex-shrink-0">
+                <Image
+                  src={`/${src}`} // Make sure images are in the public folder
+                  alt={`Slide ${idx}`}
+                  fill
+                  className="object-cover"
+                  draggable={false}
+                />
+              </div>
+            ))}
         </div>
 
         {/* Transparent Glassmorphism Form */}

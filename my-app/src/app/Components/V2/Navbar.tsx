@@ -26,14 +26,20 @@ export function NavBar() {
         >
 
           <Link href="/">
-            <Image
-              src="/hub.png"
-              alt="Logo"
-              className={`cursor-pointer transition-all duration-300 ${
+            <div
+              className={`relative transition-all duration-300 ${
                 scrolled ? 'w-[85px] h-[41px] mr-2' : 'w-[150px] h-[60px] mb-5'
               }`}
-            />
+            >
+              <Image
+                src="/hub.png"
+                alt="Logo"
+                fill
+                className="object-contain cursor-pointer"
+              />
+            </div>
           </Link>
+
 
 
           {/* Navigation */}
