@@ -1,9 +1,10 @@
 'use client';
 import { useState, useEffect, useRef } from 'react';
 
-const videoRefs = useRef<(HTMLVideoElement | null)[]>([]);
+
 
 export function CxSection() {
+
   const videos = [
     { src: '/execution.mp4', title: 'Testimonial 1' },
     { src: '/hub journey.mp4', title: 'Testimonial 2' },
