@@ -47,11 +47,11 @@ next-env.d.ts
 *.mov
 
 # Large image files
-*.jpg
-*.jpeg
-*.png
-*.webp
-*.svg
+# *.jpg
+# *.jpeg
+# *.png
+# *.webp
+# *.svg
 
 # Node modules
 node_modules/
@@ -60,7 +60,7 @@ node_modules/
 .next/
 
 # Large files
-*.mp4
-*.webm
-*.avi
-*.mov
+# *.mp4
+# *.webm
+# *.avi
+# *.mov
