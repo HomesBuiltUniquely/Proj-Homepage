@@ -48,7 +48,7 @@ export default function Header() {
     touchStartXRef.current = e.touches[0].clientX;
   };
 
-  const handleTouchEnd = (e: any) => {
+  const handleTouchEnd = (e : any) => {
     if (!isTransitioning) return;
     touchEndXRef.current = e.changedTouches[0].clientX;
     const distance = touchStartXRef.current - touchEndXRef.current;

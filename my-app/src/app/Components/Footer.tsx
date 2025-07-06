@@ -1,7 +1,8 @@
 import Link from "next/link"
 
 export function Footer() {
-    return (
+
+  return (
       <footer className="bg-[#DDCDC1] pt-12 pb-6 px-6">
         {/* Top Section */}
         <div className="flex justify-around">
@@ -35,16 +36,16 @@ export function Footer() {
             <h3 className="text-sm font-bold mb-4 text-[#2B1D14] ml-8" >SOCIAL MEDIA</h3>
             <ul className="space-y-2 text-sm text-[#4A3F35]">
             <div className="flex"> 
-              <div className="flex"><img src="facebook.png" alt="facebook" className="size-5 mr-3 mb-1"></img><li className="hover:text-amber-50"><a href="https://www.facebook.com/HomesUnderBudget/" className="mr-5">Facebook</a></li></div>
-              <div className="flex"><img src="twitter.png" alt="facebook" className="size-5 mr-3 mb-1"></img><li className="hover:text-amber-50"><a href="https://x.com/Homeunderbudget" className="">Twitter</a></li></div>
+              <div className="flex"><img src="facebook.png" alt="facebook" className="size-5 mr-3 mb-1"></img><li className="hover:text-amber-50"><Link href="https://www.facebook.com/HomesUnderBudget/" className="mr-5">Facebook</Link></li></div>
+              <div className="flex"><img src="twitter.png" alt="facebook" className="size-5 mr-3 mb-1"></img><li className="hover:text-amber-50"><Link href="https://x.com/Homeunderbudget" className="">Twitter</Link></li></div>
             </div>
             <div className="flex">
-              <div className="flex"><img src="pinterest.png" alt="facebook" className="size-5 mr-3 mb-1"></img><li className="hover:text-amber-50"><a href="https://in.pinterest.com/homesunderbudget/" className="mr-5">Pinterest</a></li></div>
-              <div className="flex ml-1.5"><img src="instagram.png" alt="facebook" className="size-5 mr-3 mb-1"></img><li className="hover:text-amber-50"><a href="https://www.instagram.com/homesunderbudget/">Instagram</a></li></div>
+              <div className="flex"><img src="pinterest.png" alt="facebook" className="size-5 mr-3 mb-1"></img><li className="hover:text-amber-50"><Link href="https://in.pinterest.com/homesunderbudget/" className="mr-5">Pinterest</Link></li></div>
+              <div className="flex ml-1.5"><img src="instagram.png" alt="facebook" className="size-5 mr-3 mb-1"></img><li className="hover:text-amber-50"><Link href="https://www.instagram.com/homesunderbudget/">Instagram</Link></li></div>
             </div>
             <div className="flex">
-              <div className="flex"><img src="youtube.png" alt="facebook" className="size-5 mr-3 mb-1"></img><li className="hover:text-amber-50"><a href="https://www.youtube.com/@homesunderbudget" className="mr-5">Youtube</a></li></div>
-              <div className="flex ml-3"><img src="message.png" alt="facebook" className="size-5 mr-3 mb-1"></img><li className="hover:text-amber-50"><a href="https://www.linkedin.com/company/homesunderbudget/">LinkedIn</a></li></div>
+              <div className="flex"><img src="youtube.png" alt="facebook" className="size-5 mr-3 mb-1"></img><li className="hover:text-amber-50"><Link href="https://www.youtube.com/@homesunderbudget" className="mr-5">Youtube</Link></li></div>
+              <div className="flex ml-3"><img src="message.png" alt="facebook" className="size-5 mr-3 mb-1"></img><li className="hover:text-amber-50"><Link href="https://www.linkedin.com/company/homesunderbudget/">LinkedIn</Link></li></div>
             </div>
             </ul>
           </div>

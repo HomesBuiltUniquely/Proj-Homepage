@@ -42,9 +42,9 @@ export function NavBar() {
             }`}
           >
             <ul className="flex space-x-6 text-black pb-3">
-              <li><a href="/" className="hover: font-medium text-[16px] ">Home</a></li>
-              <li><a href="/Services" className="hover:text-blue-500 text-[16px] font-medium ">Services</a></li>
-              <li><a href="/Explore Rooms" className="hover:text-blue-500 text-[16px] font-medium mr-8 ">Explore Rooms</a></li>
+              <li><Link href="/" className="hover: font-medium text-[16px] ">Home</Link></li>
+              <li><Link href="/Services" className="hover:text-blue-500 text-[16px] font-medium ">Services</Link></li>
+              <li><Link href="/Explore Rooms" className="hover:text-blue-500 text-[16px] font-medium mr-8 ">Explore Rooms</Link></li>
             </ul>
             <Link href="/Contact">
             <div className="text-amber-950 w-[200px] h-[40px] font-bold text-center pt-2 rounded-4xl mb-3 bg-[#DDCDC1] gilda-display-regular">
